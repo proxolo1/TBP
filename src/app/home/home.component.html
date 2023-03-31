@@ -1,0 +1,90 @@
+<div class="container-fluid">
+  <div class="container">
+    <h3>Tracker</h3>
+    <form class="form row mt-2" id="trackerForm">
+      <div class="add-item col-12">
+        <span>Add new item:</span>
+      </div>
+      <div class="col mt-3">
+        <div class="form-group">
+          <label for="slNo">Serial number:</label>
+          <input type="number" class="form-control" id="slNo" name="slNo" placeholder="Enter serial number" required />
+        </div>
+        <div class="form-group">
+          <label for="billNo">Bill number:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="billNo"
+            name="billNo"
+            placeholder="Enter bill number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="vehicleNo">Vehicle number:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="vehicleNo"
+            name="vehicleNo"
+            placeholder="Enter vehicle number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="amount">Enter amount:</label>
+          <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount" required />
+        </div>
+      </div>
+      <div class="col mt-3">
+        <div class="form-group">
+          <label for="percentage">Select percentage:</label>
+          <select class="form-control" id="percentage" name="percentage" required>
+            <option value="10">10%</option>
+            <option value="20">20%</option>
+            <option value="30">30%</option>
+            <option value="40">40%</option>
+            <option value="50">50%</option>
+            <option value="60">60%</option>
+            <option value="70">70%</option>
+            <option value="80">80%</option>
+            <option value="90">90%</option>
+            <option value="100">100%</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="commission">Commission:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="commission"
+            name="commission"
+            disabled
+            placeholder="Commission"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="totalIncome">Total income:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="totalIncome"
+            name="totalIncome"
+            disabled
+            placeholder="Total income"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="time">Time:</label>
+          <input type="time" class="form-control" id="time" name="time" placeholder="Time" required />
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Add details</button>
+      </div>
+    </form>
+  </div>
+</div>
