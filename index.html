@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Sl NO.</label>
+        <input type="number" placeholder="sl No">
+        <label for="">Bill Number</label>
+        <input type="number">
+        <label for="">vehicle number</label>
+        <input type="number" name="" id="">
+        <label for="">amount</label>
+        <input type="number" name="" id="amount">
+        <select name="" id="percentage">
+            <option value="10">10%</option>
+            <option value="20">20%</option>
+            <option value="30">30%</option>
+            <option value="40">40%</option>
+            <option value="50">50%</option>
+            <option value="60">60%</option>
+            <option value="70">70%</option>
+            <option value="80">80%</option>
+            <option value="90">90%</option>
+        </select>
+        <p>
+           
+                commission : 
+            <span class="commission"></span>
+        </p>
+        <p>total income : <span class="total-income"></span></p>
+    </form>
+</body>
+<script>
+    let amount=document.querySelector('#amount');
+    let percentage=document.querySelector('#percentage');
+    let commission=document.querySelector('.commission');
+    amount.addEventListener('keydown',()=>{
+        checkCommission();
+        
+    })
+    percentage.addEventListener('click',()=>{
+        checkCommission();
+    })
+    function checkCommission(){
+        console.log(amount.value*(percentage.value/100))
+        commission.innerHTML=amount.value*(percentage.value/100);
+        document.querySelector('.total-income').innerHTML= amount.value-amount.value*(percentage.value/100)
+    }
+</script>
+</html>
